@@ -1,2 +1,3 @@
 #### 小米商城官网首页
-![image](https://images2018.cnblogs.com/blog/1318434/201805/1318434-20180503220103177-1220064172.png)
+[小米官网](https://www.mi.com/)
+![image](./imgs/xiaomi.png)
