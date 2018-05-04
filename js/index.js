@@ -1,12 +1,14 @@
 window.onload = function () {
 
+    var path = window.location.href.substring(0,window.location.href.lastIndexOf('/'));
+
     //右上方购物车换图片
     var cartA = document.getElementsByClassName('topbar-cart')[0].children[0];
     cartA.onmouseover = function () {
-        cartA.children[0].style.background = 'url("../imgs/icon-shop2.png") 3px 24px';
+        cartA.children[0].style.background = 'url("'+path+'/imgs/icon-shop2.png") 3px 24px';
     };
     cartA.onmouseout = function () {
-        cartA.children[0].style.background = 'url("../imgs/icon-shop1.png") 3px 24px';
+        cartA.children[0].style.background = 'url("'+path+'/imgs/icon-shop1.png") 3px 24px';
     };
 
     //搜索框样式js
@@ -66,10 +68,10 @@ window.onload = function () {
     var downLeftli = document.getElementsByClassName('down-l')[0].children[0].children;
     for(var j=0;j<downLeftli.length;j++){
         downLeftli[j].onmouseover = function () {
-            this.children[0].children[0].style.background = 'url("../imgs/icon-small2.png") no-repeat center';
+            this.children[0].children[0].style.background = 'url("'+path+'/imgs/icon-small2.png") no-repeat center';
         };
         downLeftli[j].onmouseout = function () {
-            this.children[0].children[0].style.background = 'url("../imgs/icon-small1.png") no-repeat center';
+            this.children[0].children[0].style.background = 'url("'+path+'/imgs/icon-small1.png") no-repeat center';
         };
     }
 
@@ -80,17 +82,17 @@ window.onload = function () {
     var fixed_2 = document.getElementsByClassName('fixed-2')[0];
     right_ul.children[0].onmouseover = function () {
         oBarRight_img.style.display = 'block';
-        fixed_1.style.background = 'url("../imgs/fixed-1c.png") no-repeat center center/30px';
+        fixed_1.style.background = 'url("'+path+'/imgs/fixed-1c.png") no-repeat center center/30px';
     };
     right_ul.children[0].onmouseout = function () {
         oBarRight_img.style.display = 'none';
-        fixed_1.style.background = 'url("../imgs/fixed-1.png") no-repeat center center/30px';
+        fixed_1.style.background = 'url("'+path+'/imgs/fixed-1.png") no-repeat center center/30px';
     };
     right_ul.children[1].onmouseover = function () {
-        fixed_2.style.background = 'url("../imgs/fixed-2c.png") no-repeat center center/30px';
+        fixed_2.style.background = 'url("'+path+'/imgs/fixed-2c.png") no-repeat center center/30px';
     };
     right_ul.children[1].onmouseout = function () {
-        fixed_2.style.background = 'url("../imgs/fixed-2.png") no-repeat center center/30px';
+        fixed_2.style.background = 'url("'+path+'/imgs/fixed-2.png") no-repeat center center/30px';
     };
 
 };
